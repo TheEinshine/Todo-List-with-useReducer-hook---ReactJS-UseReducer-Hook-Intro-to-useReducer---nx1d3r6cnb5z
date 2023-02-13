@@ -11,7 +11,7 @@ const Todo = ({state,dispatch}) => {
     return (
         <div className='todo'>
             {state.map((e,i)=>{
-                return <div id={e.id} key={i} className='todo-title'>{e.text} <br/> <button onClick={()=>{deleter(e.id)}} className='todo-delete'>Del</button></div>
+                return <div id={e.id} key={i} className='todo-title'>{e.text} <br/> <button onClick={()=>{deleter(e.id)}} className='todo-delete'>delete</button></div>
             })}
             
         </div>

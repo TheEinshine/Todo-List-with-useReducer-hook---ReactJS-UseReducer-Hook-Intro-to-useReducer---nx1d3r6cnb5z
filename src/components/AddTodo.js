@@ -16,7 +16,7 @@ const AddTodo = ({ dispatch }) => {
     
    return (
         <>
-            <form onSubmit={(e)=>{e.preventDefault()}} id="todo-form" >
+            <form method="POST" id="todo-form" >
                 <input value={data} onChange={(e)=>{setData(e.target.value)}} type="text" id="todo-input"/>
                 <button onClick={()=>{handleAddTask(data)}} type="submit">Submit</button>
             </form>

@@ -11,12 +11,12 @@ const AddTodo = ({ dispatch }) => {
     });
     setData('');
   }
-  console.log(data);
+//   console.log(data);
 
     
    return (
         <>
-            <form method="get" id="todo-form" >
+            <form onSubmit={(e)=>e.preventDefault()} id="todo-form" >
                 <input value={data} onChange={(e)=>{setData(e.target.value)}} type="text" id="todo-input"/>
                 <button onClick={()=>{handleAddTask(data)}} type="submit">Submit</button>
             </form>
